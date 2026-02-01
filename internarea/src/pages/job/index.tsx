@@ -128,7 +128,7 @@ const index = () => {
   useEffect(()=>{
     const fetchdata=async()=>{
       try {
-        const res=await axios.get( "http://localhost:5000/api/job")     
+        const res=await axios.get( "https://internshala-clone-fvv4.onrender.com/api/job")     
         setjob(res.data)
         setfilteredjobs(res.data)
       } catch (error) {
